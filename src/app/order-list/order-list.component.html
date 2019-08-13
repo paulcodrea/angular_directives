@@ -1,0 +1,8 @@
+<div *ngFor = "let order of ordersArray; let i = index"
+(click)="handleClick(i)">
+  
+  <h2>{{i}}.{{order.title}}</h2>
+  <p>{{order.text}}</p>
+  <p>{{order.date | date: "full" | uppercase}}</p>
+
+</div>
